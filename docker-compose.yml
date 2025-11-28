@@ -1,8 +1,6 @@
-
 services:
   db:
     image: mysql:8.0
-    container_name: db_cont  # optional, can remove to let Docker auto-name
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -16,7 +14,6 @@ services:
 
   web:
     image: notes-app:latest
-    container_name: web_cont  # optional
     restart: always
     depends_on:
       - db
