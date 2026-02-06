@@ -15,7 +15,7 @@ services:
 
 
   web:
-    image: "ashuthosh476/notes-app:latest"
+    image: "nileshgadhave11/notes-app:latest"
     restart: always
     depends_on:
       - db
